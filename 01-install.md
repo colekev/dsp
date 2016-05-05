@@ -46,13 +46,13 @@ cross-platform.
 
 Did you install Python 2 or 3? Why?  
 
->> REPLACE THIS TEXT WITH YOUR RESPONSE
+Python 2 came installed on my mac. Since I'm new to python and don't have to worry about old habits, I decided to go install Python 3, then install Anaconda 3.5. I understand that certain tutorials may now be out of date, but I think it's always better to push ahead and learn the newest version.
 
 ###Q2. Which Python Version Installed   
 
 How can you check the version of Python installed if you happen to be on an unfamiliar computer?
 
->> REPLACE THIS TEXT WITH YOUR RESPONSE
+python -V
 
  
 
