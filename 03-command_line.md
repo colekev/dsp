@@ -37,12 +37,12 @@ What do the following commands do:
 `ls -t`  
 `ls -Glp`  
 
-'ls' list directory contents
-'ls -a' include directory entries whose names begin with a dot
-'ls -l' list in long format
-'ls -lh' list in long format with unit suffixes
-'ls -t' list and sort by time modified
-'ls -Glp' long format list with colorized output enabled and slashes after directory names
+`ls` list directory contents
+`ls -a` include directory entries whose names begin with a dot
+`ls -l` list in long format
+`ls -lh` list in long format with unit suffixes
+`ls -t` list and sort by time modified
+`ls -Glp` long format list with colorized output enabled and slashes after directory names
 
 ---
 
@@ -50,11 +50,11 @@ What do the following commands do:
 
 Explore these other [ls options](http://www.techonthenet.com/unix/basic/ls.php) and pick 5 of your favorites:
 
-'ls -R' list subdirectories
-'ls -d' displays only directories
-'ls -m' displays names as a comma-separated list
-'ls -1' displays each entry on one line
-'ls -g' displays the long format listing excluding owner name
+`ls -R` list subdirectories
+`ls -d` displays only directories
+`ls -m` displays names as a comma-separated list
+`ls -1` displays each entry on one line
+`ls -g` displays the long format listing excluding owner name
 
 ---
 
@@ -62,9 +62,9 @@ Explore these other [ls options](http://www.techonthenet.com/unix/basic/ls.php) 
 
 What does `xargs` do? Give an example of how to use it.
 
-'xargs' adds arguments to complete a command, the executes the resulting command. 
+`xargs` adds arguments to complete a command, the executes the resulting command. 
 
-'ls | xargs -n 3 echo' is adding the arguments to display in three column to the 'ls' command
+`ls | xargs -n 3 echo` is adding the arguments to display in three column to the 'ls' command
 
  
 
