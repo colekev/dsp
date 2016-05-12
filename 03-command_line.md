@@ -82,7 +82,7 @@ What does `xargs` do? Give an example of how to use it.
 
 `xargs` adds arguments to complete a command, the executes the resulting command. 
 
-`ls | xargs -n 3 echo` is adding the arguments to display in three column to the 'ls' command
+`ls | xargs -n 3 echo` is adding the arguments to display in three column to the `ls` command
 
  
 
