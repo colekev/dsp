@@ -59,7 +59,7 @@ We will also use Jupyter (IPython) notebooks, but this does not remove the need 
 
 What terminal editor will you use? How did you make your decision?
 
-I chose to use vim. The fact that it's the default on many systems and comes with a tutorial was compelling.
+>> I chose to use vim. The fact that it's the default on many systems and comes with a tutorial was compelling.
 
 --
 
@@ -67,7 +67,7 @@ I chose to use vim. The fact that it's the default on many systems and comes wit
 
 What graphical editor will you use? How did you make your decision? What are some interesting features of your editor? What are some useful keyboard shortcuts for your editor? How do you customize your editor?
 
-I'm using Sublime for my graphical editor. I researched the most popular editors and found that Sublime was used by roughly 50 percent of surveyed Python programmers. While there's more important than popularity, it's likely that there will be more tutorials and resources available for the editor used by most Python programmers.
+>> I'm using Sublime for my graphical editor. I researched the most popular editors and found that Sublime was used by roughly 50 percent of surveyed Python programmers. While there's more important than popularity, it's likely that there will be more tutorials and resources available for the editor used by most Python programmers.
 
 Useful features of Sublime include the extensive library of plugins, and the color coordinating of commands. 
 
@@ -77,7 +77,7 @@ File switching: ctrl + p
 Goto Symbols: ctrl + r
 There are so many shortcuts that it will take more time to truly explore and find more favorites.
 
-I customized the theme, colors, auto complete settings, font face, match brackets, tab size, etc. 
+>> I customized the theme, colors, auto complete settings, font face, match brackets, tab size, etc. 
 I did this all by adding to the "Preferences.sublime - settings" file
 
  
