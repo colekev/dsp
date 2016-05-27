@@ -13,7 +13,7 @@ these in a couple of hours.
 
 Make a cheat sheet for yourself: a list of at least **ten** commands and what they do, focused on things that are new, interesting, or otherwise worth remembering.
 
-cat - show the contents of a file in terminal  
+>> cat - show the contents of a file in terminal  
 grep - search for text in file  
 find - finding files  
 '|' - piping from one command to another on the same line  
@@ -37,7 +37,7 @@ What do the following commands do:
 `ls -t`  
 `ls -Glp`  
 
-`ls` list directory contents  
+>> `ls` list directory contents  
 `ls -a` include directory entries whose names begin with a dot  
 `ls -l` list in long format  
 `ls -lh` list in long format with unit suffixes  
@@ -50,7 +50,7 @@ What do the following commands do:
 
 Explore these other [ls options](http://www.techonthenet.com/unix/basic/ls.php) and pick 5 of your favorites:
 
-`ls -R` list subdirectories  
+>> `ls -R` list subdirectories  
 `ls -d` displays only directories  
 `ls -m` displays names as a comma-separated list  
 `ls -1` displays each entry on one line  
@@ -62,9 +62,9 @@ Explore these other [ls options](http://www.techonthenet.com/unix/basic/ls.php) 
 
 What does `xargs` do? Give an example of how to use it.
 
-`xargs` adds arguments to complete a command, the executes the resulting command. 
+>> `xargs` adds arguments to complete a command, the executes the resulting command. 
 
-`ls | xargs -n 3 echo` is adding the arguments to display in three column to the `ls` command
+>> `ls | xargs -n 3 echo` is adding the arguments to display in three column to the `ls` command
 
  
 
