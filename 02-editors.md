@@ -69,12 +69,12 @@ What graphical editor will you use? How did you make your decision? What are som
 
 >> I'm using Sublime for my graphical editor. I researched the most popular editors and found that Sublime was used by roughly 50 percent of surveyed Python programmers. While there's more important than popularity, it's likely that there will be more tutorials and resources available for the editor used by most Python programmers.
 
-Useful features of Sublime include the extensive library of plugins, and the color coordinating of commands. 
+>> Useful features of Sublime include the extensive library of plugins, and the color coordinating of commands. 
 
-Useful keyboard shortcuts:
-Command palette: ctrl + shift + p
-File switching: ctrl + p
-Goto Symbols: ctrl + r
+>> Useful keyboard shortcuts:  
+Command palette: ctrl + shift + p  
+File switching: ctrl + p  
+Goto Symbols: ctrl + r  
 There are so many shortcuts that it will take more time to truly explore and find more favorites.
 
 >> I customized the theme, colors, auto complete settings, font face, match brackets, tab size, etc. 
