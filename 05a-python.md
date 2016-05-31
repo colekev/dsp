@@ -77,13 +77,19 @@ list(filter(lambda a: a < 5, list1))
 ```
 >> The capabilities of list comprehensions and `map()` and `filter()` are very similar, with list comprehensions being a bit more convoluted in their construction, at least for me.
 
-Set comprehensions are :
+>> Set comprehensions are similar to list comprehensions:
 ```
-
-
-
-
-
+>>> set1 = set(range(1,10))
+>>> {a for a in set1 if a < 5}
+```
+>> Dictionary comprehensions can be used to create the key:value pairs:
+```
+{a: a**2 for a in (2, 4, 6)}
+```
+>> Or:
+```
+{a + 3: a + 6 for a in range(1,10)}
+```
 
 ---
 
