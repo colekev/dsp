@@ -34,14 +34,18 @@ Describe Python's `lambda`. What is it, and what is it used for? Give at least o
 
 >> `lambda` is a way to create small anonymous functions, or functions without a name. These functions are just needed where they have been created, the result of which is the return value.  
 
-Using `lambda` to sort without perference to uppercase:  
-``` 
-sorted(['Some', 'words', 'sort', 'differently'], key=lambda word: word.lower())  
-['differently', 'Some', 'sort', 'words']
+>> Simplistic example using `lambda`  
+```
+>>> f = lambda x, y : x + y
+>>> f(1,1)
+2
 ```
 
-
-
+>> Using `lambda` to sort without perference to uppercase:  
+``` 
+>>> sorted(['Some', 'words', 'sort', 'differently'], key=lambda word: word.lower())  
+['differently', 'Some', 'sort', 'words']
+```
 
 ---
 
@@ -49,7 +53,37 @@ sorted(['Some', 'words', 'sort', 'differently'], key=lambda word: word.lower())
 
 Explain list comprehensions. Give examples and show equivalents with `map` and `filter`. How do their capabilities compare? Also demonstrate set comprehensions and dictionary comprehensions.
 
->> REPLACE THIS TEXT WITH YOUR RESPONSE
+>> List comprehensions provide a concise way to create lists. These new lists are made as the result of some operations applied to each member of another sequence or iterable, or to create a subsequence of those elements that satisfy a certain condition.  
+List comprehension example:  
+```
+>>> def product10(a):
+...     return a * 10
+... 
+>>> list1 = range(1,10)
+
+>>> [product10(a) for a in list1]
+```
+Equivalent with `map`:
+```
+>>> list(map(product10, list1))
+```
+List comprehension:
+```
+>>> [a for a in list1 if a < 5]
+```
+Equivalent with `filter`:
+```
+list(filter(lambda a: a < 5, list1))
+```
+>> The capabilities of list comprehensions and `map()` and `filter()` are very similar, with list comprehensions being a bit more convoluted in their construction, at least for me.
+
+Set comprehensions are :
+```
+
+
+
+
+
 
 ---
 
