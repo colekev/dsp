@@ -22,7 +22,9 @@ Tuples will work as keys in dictionaries.
 
 How are Python lists and sets similar and different? Give examples of using both. How does performance compare between lists and sets for finding an element. Why?
 
->> REPLACE THIS TEXT WITH YOUR RESPONSE
+>> Similarities: Both group and store multiple elements into one structure. Can both hold any data type.  
+Differences: Unordered (not sortable), non-duplicative.  
+Performance: Sets are much faster than lists for finding an element. When searching for an element in a list, the command goes through the entire list in order. In a set, there is a defined hash for the set elements, so you can search directly for that element, not go through and search through every element in the entire set.
 
 ---
 
@@ -30,7 +32,16 @@ How are Python lists and sets similar and different? Give examples of using both
 
 Describe Python's `lambda`. What is it, and what is it used for? Give at least one example, including an example of using a `lambda` in the `key` argument to `sorted`.
 
->> REPLACE THIS TEXT WITH YOUR RESPONSE
+>> `lambda` is a way to create small anonymous functions, or functions without a name. These functions are just needed where they have been created, the result of which is the return value.  
+
+Using `lambda` to sort without perference to uppercase:  
+``` 
+sorted(['Some', 'words', 'sort', 'differently'], key=lambda word: word.lower())  
+['differently', 'Some', 'sort', 'words']
+```
+
+
+
 
 ---
 
