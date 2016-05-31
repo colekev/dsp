@@ -19,9 +19,9 @@ def donuts(count):
     'Number of donuts: many'
     """
     if count >= 10:
-        print("Number of donuts: many")
+        return "Number of donuts: many"
     else:
-        print("Number of dounts: " + str(count))
+        return "Number of dounts: " + str(count)
 
 
 def both_ends(s):
@@ -41,9 +41,9 @@ def both_ends(s):
     'xyyz'
     """
     if len(s) < 2:
-        print('')
+        return ''
     else:
-        print(s[:2] + s[-2:])
+        return s[:2] + s[-2:]
 
 
 def fix_start(s):
@@ -65,7 +65,7 @@ def fix_start(s):
     firstChar = s[0]
     change = s[1:]
     second = change.replace(firstChar, "*")
-    print(firstChar + second)
+    return firstChar + second
 
 
 def mix_up(a, b):
@@ -83,7 +83,7 @@ def mix_up(a, b):
     >>> mix_up('pezzy', 'firm')
     'fizzy perm'
     """
-    print(b[:2] + a[2:] + " " + a[:2] + b[2:])
+    return b[:2] + a[2:] + " " + a[:2] + b[2:]
 
 
 def verbing(s):
@@ -101,12 +101,12 @@ def verbing(s):
     'do'
     """
     if len(s) < 3:
-        print(s)
+        return s
     else:
         if s[-3:] == "ing":
-            print(s + "ly")
+            return s + "ly"
         else:
-            print(s + "ing")
+            return s + "ing"
 
 
 def not_bad(s):
@@ -131,11 +131,11 @@ def not_bad(s):
         badIndex = s.index("bad")
         if notIndex < badIndex:
             newString = s.replace(s[notIndex:(badIndex+3)], "good")
-            print(newString)
+            return newString
         else:
-            print(s)
+            return s
     except:
-        print(s)
+        return s
 
 
 import math
@@ -160,7 +160,7 @@ def front_back(a, b):
     """
     aSplit = math.ceil(len(a)/2)
     bSplit = math.ceil(len(b)/2)
-    print(a[:aSplit] + b[:bSplit] + a[aSplit:] + b[bSplit:])
+    return a[:aSplit] + b[:bSplit] + a[aSplit:] + b[bSplit:]
 
 
 
