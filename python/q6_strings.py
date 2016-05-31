@@ -18,7 +18,10 @@ def donuts(count):
     >>> donuts(99)
     'Number of donuts: many'
     """
-    raise NotImplementedError
+    if count >= 10:
+        print("Number of donuts: many")
+    else:
+        print("Number of dounts: " + str(count))
 
 
 def both_ends(s):
@@ -37,7 +40,10 @@ def both_ends(s):
     >>> both_ends('xyz')
     'xyyz'
     """
-    raise NotImplementedError
+    if len(s) < 2:
+        print('')
+    else:
+        print(s[:2] + s[-2:])
 
 
 def fix_start(s):
@@ -56,7 +62,10 @@ def fix_start(s):
     >>> fix_start('donut')
     'donut'
     """
-    raise NotImplementedError
+    firstChar = s[0]
+    change = s[1:]
+    second = change.replace(firstChar, "*")
+    print(firstChar + second)
 
 
 def mix_up(a, b):
@@ -74,7 +83,7 @@ def mix_up(a, b):
     >>> mix_up('pezzy', 'firm')
     'fizzy perm'
     """
-    raise NotImplementedError
+    print(b[:2] + a[2:] + " " + a[:2] + b[2:])
 
 
 def verbing(s):
@@ -91,7 +100,13 @@ def verbing(s):
     >>> verbing('do')
     'do'
     """
-    raise NotImplementedError
+    if len(s) < 3:
+        print(s)
+    else:
+        if s[-3:] == "ing":
+            print(s + "ly")
+        else:
+            print(s + "ing")
 
 
 def not_bad(s):
@@ -111,9 +126,22 @@ def not_bad(s):
     >>> not_bad("It's bad yet not")
     "It's bad yet not"
     """
-    raise NotImplementedError
+    try:
+        notIndex = s.index("not")
+        badIndex = s.index("bad")
+        if notIndex < badIndex:
+            newString = s.replace(s[notIndex:(badIndex+3)], "good")
+            print(newString)
+        else:
+            print(s)
+    except:
+        print(s)
 
 
+import math
+"""
+    Using the math package to deal with Python 3's strange rounding
+    """
 def front_back(a, b):
     """
     Consider dividing a string into two halves. If the length is even,
@@ -130,4 +158,10 @@ def front_back(a, b):
     >>> front_back('Kitten', 'Donut')
     'KitDontenut'
     """
-    raise NotImplementedError
+    aSplit = math.ceil(len(a)/2)
+    bSplit = math.ceil(len(b)/2)
+    print(a[:aSplit] + b[:bSplit] + a[aSplit:] + b[bSplit:])
+
+
+
+
