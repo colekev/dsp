@@ -12,7 +12,9 @@ For quick and easy interactive practice with Python, many people enjoy [Codecade
 
 How are Python lists and tuples similar and different? Which will work as keys in dictionaries? Why?
 
->> REPLACE THIS TEXT WITH YOUR RESPONSE
+>> Lists and tuples are similar in that they're both a sequence of values indexed by integers. An important difference is that tuples are immutable. Tuples are comma-separated lists, no brackets unlike lists.  
+Tuples will work as keys in dictionaries. 
+
 
 ---
 
@@ -20,7 +22,9 @@ How are Python lists and tuples similar and different? Which will work as keys i
 
 How are Python lists and sets similar and different? Give examples of using both. How does performance compare between lists and sets for finding an element. Why?
 
->> REPLACE THIS TEXT WITH YOUR RESPONSE
+>> Similarities: Both group and store multiple elements into one structure. Can both hold any data type.  
+Differences: Unordered (not sortable), non-duplicative.  
+Performance: Sets are much faster than lists for finding an element. When searching for an element in a list, the command goes through the entire list in order. In a set, there is a defined hash for the set elements, so you can search directly for that element, not go through and search through every element in the entire set.
 
 ---
 
@@ -28,7 +32,20 @@ How are Python lists and sets similar and different? Give examples of using both
 
 Describe Python's `lambda`. What is it, and what is it used for? Give at least one example, including an example of using a `lambda` in the `key` argument to `sorted`.
 
->> REPLACE THIS TEXT WITH YOUR RESPONSE
+>> `lambda` is a way to create small anonymous functions, or functions without a name. These functions are just needed where they have been created, the result of which is the return value.  
+
+>> Simplistic example using `lambda`  
+```
+>>> f = lambda x, y : x + y
+>>> f(1,1)
+2
+```
+
+>> Using `lambda` to sort without perference to uppercase:  
+``` 
+>>> sorted(['Some', 'words', 'sort', 'differently'], key=lambda word: word.lower())  
+['differently', 'Some', 'sort', 'words']
+```
 
 ---
 
@@ -36,7 +53,43 @@ Describe Python's `lambda`. What is it, and what is it used for? Give at least o
 
 Explain list comprehensions. Give examples and show equivalents with `map` and `filter`. How do their capabilities compare? Also demonstrate set comprehensions and dictionary comprehensions.
 
->> REPLACE THIS TEXT WITH YOUR RESPONSE
+>> List comprehensions provide a concise way to create lists. These new lists are made as the result of some operations applied to each member of another sequence or iterable, or to create a subsequence of those elements that satisfy a certain condition.  
+List comprehension example:  
+```
+>>> def product10(a):
+...     return a * 10
+... 
+>>> list1 = range(1,10)
+
+>>> [product10(a) for a in list1]
+```
+Equivalent with `map`:
+```
+>>> list(map(product10, list1))
+```
+List comprehension:
+```
+>>> [a for a in list1 if a < 5]
+```
+Equivalent with `filter`:
+```
+list(filter(lambda a: a < 5, list1))
+```
+>> The capabilities of list comprehensions and `map()` and `filter()` are very similar, with list comprehensions being a bit more convoluted in their construction, at least for me.
+
+>> Set comprehensions are similar to list comprehensions:
+```
+>>> set1 = set(range(1,10))
+>>> {a for a in set1 if a < 5}
+```
+>> Dictionary comprehensions can be used to create the key:value pairs:
+```
+{a: a**2 for a in (2, 4, 6)}
+```
+>> Or:
+```
+{a + 3: a + 6 for a in range(1,10)}
+```
 
 ---
 
@@ -51,7 +104,7 @@ date_start = '01-02-2013'
 date_stop = '07-28-2015'
 ```
 
->> REPLACE THIS TEXT WITH YOUR RESPONSE (answer will be in number of days)
+>> 937 days
 
 b.  
 ```
@@ -59,7 +112,7 @@ date_start = '12312013'
 date_stop = '05282015'  
 ```
 
->> REPLACE THIS TEXT WITH YOUR RESPONSE (answer will be in number of days)
+>> 513
 
 c.  
 ```
@@ -67,7 +120,7 @@ date_start = '15-Jan-1994'
 date_stop = '14-Jul-2015'  
 ```
 
->> REPLACE THIS TEXT WITH YOUR RESPONSE  (answer will be in number of days)
+>> 7850
 
 Place code in this file: [q5_datetime.py](python/q5_datetime.py)
 
