@@ -24,9 +24,11 @@ with open('faculty.csv') as csvfile:
     degrees = sum(degrees, [])
 
     from collections import Counter
-    print(Counter(degrees)) # gives frequency of each degree
+    print(Counter(degrees)) # Q1 gives frequency of each degree
 
-    print(Counter(titles)) # gives frequency of each titles
+    print(Counter(titles)) # Q2 gives frequency of each titles
+
+    print(emails[1:len(emails)]) # Q3 prints list of emails
 
 
 
