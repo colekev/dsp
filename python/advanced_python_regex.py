@@ -26,5 +26,7 @@ with open('faculty.csv') as csvfile:
     from collections import Counter
     print(Counter(degrees)) # gives frequency of each degree
 
+    print(Counter(titles)) # gives frequency of each titles
+
 
 

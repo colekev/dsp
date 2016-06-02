@@ -31,8 +31,10 @@ MA: 1
 
 ####Q2. Find how many different titles there are, and their frequencies:  Ex:  Assistant Professor, Professor
 
->> REPLACE THIS WITH YOUR RESPONSE
-
+>> There are five different titles:  
+Professor of Biostatistics: 13  
+Associate Professor of Biostatistics: 12  
+Assistant Professor of Biostatistics: 12  (this includes one typo having "is", not "of")  
 
 ####Q3. Search for email addresses and put them in a list.  Print the list of email addresses.
 
