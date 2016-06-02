@@ -28,7 +28,8 @@ with open('faculty.csv') as csvfile:
 
     print(Counter(titles)) # Q2 gives frequency of each titles
 
-    print(emails[1:len(emails)]) # Q3 prints list of emails
+    emailList = emails[1:len(emails)] # gets rid of header
+    print(emailList) # Q3 prints list of emails
 
     for i in range(0,len(emails)):
         emails[i] = re.sub('.*[\@]', '', emails[i]) # remove everything before '@'
