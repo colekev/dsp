@@ -1,10 +1,10 @@
-## Advanced Python    
+## Advanced Python
 
-###Regular Expressions, Dictionary, Writing to CSV File  
+###Regular Expressions, Dictionary, Writing to CSV File
 
 This question has multiple parts, and will take **20+ hours** to complete, depending on your python proficiency level.  Knowing these skills will be extremely beneficial during the first few weeks of the bootcamp.
 
-For Part 1, use of regular expressions is optional.  Work can be completed using a programming approach of your preference. 
+For Part 1, use of regular expressions is optional.  Work can be completed using a programming approach of your preference.
 
 ---
 
@@ -12,15 +12,22 @@ The data file represents the [Biostats Faculty List at University of Pennsylvani
 
 This data is available in this file:  [faculty.csv](python/faculty.csv)
 
---- 
+---
 
-###Part I - Regular Expressions  
+###Part I - Regular Expressions
 
 
 ####Q1. Find how many different degrees there are, and their frequencies: Ex:  PhD, ScD, MD, MPH, BSEd, MS, JD, etc.
 
->> REPLACE THIS WITH YOUR RESPONSE
-
+>> There are eight different degrees:
+PhD: 31
+ScD: 6
+MS: S
+MPH: 2
+MD: 1
+BSEd: 1
+JD: 1
+MA: 1
 
 ####Q2. Find how many different titles there are, and their frequencies:  Ex:  Assistant Professor, Professor
 
@@ -91,15 +98,15 @@ Print the first 3 key and value pairs of the dictionary:
 
 >> REPLACE THIS WITH YOUR RESPONSE
 
-####Q8.  It looks like the current dictionary is printing by first name.  Sort by last name and print the first 3 key and value pairs.  
+####Q8.  It looks like the current dictionary is printing by first name.  Sort by last name and print the first 3 key and value pairs.
 
 >> REPLACE THIS WITH YOUR RESPONSE
 
 Place your code in this file: [advanced_python_dict.py](python/advanced_python_dict.py)
 
---- 
+---
 
-If you're all done and looking for an extra challenge, then try the below problem:  
+If you're all done and looking for an extra challenge, then try the below problem:
 
 ### [Markov](python/markov.py) (Optional)
 
