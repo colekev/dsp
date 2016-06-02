@@ -30,5 +30,11 @@ with open('faculty.csv') as csvfile:
 
     print(emails[1:len(emails)]) # Q3 prints list of emails
 
+    for i in range(0,len(emails)):
+        emails[i] = re.sub('.*[\@]', '', emails[i]) # remove everything before '@'
+
+        domains = list(set(emails[1:len(emails)])) # use set to remove duplicates
+
+    print(domains) # Q4, list of domains
 
 

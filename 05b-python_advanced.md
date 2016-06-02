@@ -43,7 +43,7 @@ Assistant Professor of Biostatistics: 12  (this includes one typo having "is", n
 
 ####Q4. Find how many different email domains there are (Ex:  mail.med.upenn.edu, upenn.edu, email.chop.edu, etc.).  Print the list of unique email domains.
 
->> REPLACE THIS WITH YOUR RESPONSE
+>> There are four different email domains: ['upenn.edu', 'mail.med.upenn.edu', 'cceb.med.upenn.edu', 'email.chop.edu']
 
 Place your code in this file: [advanced_python_regex.py](python/advanced_python_regex.py)
 
