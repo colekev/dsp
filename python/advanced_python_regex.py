@@ -21,7 +21,7 @@ with open('faculty.csv') as csvfile:
         degrees[i] = re.sub('[0\.]', '', degrees[i]) # remove periods & '0'
         degrees[i] = re.split(' ', degrees[i])
 
-    degrees = sum(degrees, [])
+    degrees = sum(degrees, []) # flattens the nested lists
 
     from collections import Counter
     print(Counter(degrees)) # Q1 gives frequency of each degree
