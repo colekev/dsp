@@ -6,7 +6,7 @@ with open('faculty.csv') as csvfile:
     degrees = []
     titles = []
     emails = []
-# Get degree, titles, emails
+# emails
     for row in readCSV:
         email = row[3]
 
@@ -17,5 +17,5 @@ with open('faculty.csv') as csvfile:
 with open('email.csv', 'w', newline = '') as file:
     email = csv.writer(file)
     for i in emailList:
-        email.writerow([i])
+        email.writerow([i]) # wraps string with list
 
