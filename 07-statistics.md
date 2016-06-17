@@ -92,7 +92,9 @@ P(E|B) = 1/4
 ###Q6. Bayesian &amp; Frequentist Comparison  
 How do frequentist and Bayesian statistics compare?
 
->> REPLACE THIS TEXT WITH YOUR RESPONSE
+>> Baynesians and frequentists use similar methods, but with different understanding of probabilities.  
+Baynesians think of probabilities as states of knowledge that are updated based upon new information, including observed data.  
+Frequentists based their conclusions on the data, and do not have knowledge-based priors as parameters for the distribution of data.
 
 ---
 
